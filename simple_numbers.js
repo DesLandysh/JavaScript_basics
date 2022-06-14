@@ -79,3 +79,21 @@ console.timeEnd("while with break");
 // print('is arr == arr2 ' + (simple_num_arr.join() === simple_num_arr2.join()));
 // print('is arr == arr3 ' + (simple_num_arr.join() === simple_num_arr3.join()));
 print('is arr2 == arr4 ' + (simple_num_arr.join() === simple_num_arr4.join()));
+
+
+// Foo
+function isSimple(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+let num = 155;
+
+console.time("isSimple");
+const result = isSimple(num);
+console.timeEnd("isSimple");
+
+print(`Is the number ${num} is simple? ${result}`);
