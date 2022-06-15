@@ -97,3 +97,9 @@ const result = isSimple(num);
 console.timeEnd("isSimple");
 
 print(`Is the number ${num} is simple? ${result}`);
+
+// ternary
+print("\nTernary operator used:\n");
+for (let i = 2; i <= 5; i++) {
+  print(isSimple(i) ? `${i} is simple number` : `${i} is not a simple number`);
+}
