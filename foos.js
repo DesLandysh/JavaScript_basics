@@ -1,5 +1,5 @@
 // Python-like print() thru lambda foo (but arrow-foos haven't 'this')
-const print = str => console.log(str);
+const print = (...args) => console.log(...args);
 
 print("Sum [5, 1, 2, 3, 4]: ");
 // wrapper for measuring time
