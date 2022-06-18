@@ -1,5 +1,5 @@
 // Python-like print function
-const print = a => console.log(a);
+const print = (...args) => console.log(...args);
 
 // return array filled from 1 to desired number
 const make_arr = (number) => {
