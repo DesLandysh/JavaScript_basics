@@ -1,7 +1,7 @@
 // used node.js 16 in vs code. Launching with node simple_numbers.js
 
 // Python-like print function
-const print = str => console.log(str);
+const print = (...args) => console.log(...args);
 
 // safety number that my PC can work with
 const stop_number = 1000000;
